@@ -1,0 +1,34 @@
+[0.014s] Invoking command in '/home/eva/Documents/ros2_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eva/Documents/ros2_ws/install/talker:/home/eva/Documents/ros2_ws/install/my_turtle_controller:/home/eva/Documents/ros2_ws/install/my_service_server:/home/eva/Documents/ros2_ws/install/my_service_client:/home/eva/Documents/ros2_ws/install/my_robot_driver:/home/eva/Documents/ros2_ws/install/my_path_publisher:/home/eva/Documents/ros2_ws/install/my_fake_lidar:/home/eva/Documents/ros2_ws/install/listener:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/eva/Documents/ros2_ws/src/robot -DCMAKE_INSTALL_PREFIX=/home/eva/Documents/ros2_ws/install/robot
+[0.081s] -- The C compiler identification is GNU 13.3.0
+[0.171s] -- The CXX compiler identification is GNU 13.3.0
+[0.203s] -- Detecting C compiler ABI info
+[0.332s] -- Detecting C compiler ABI info - done
+[0.340s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.341s] -- Detecting C compile features
+[0.341s] -- Detecting C compile features - done
+[0.353s] -- Detecting CXX compiler ABI info
+[0.481s] -- Detecting CXX compiler ABI info - done
+[0.490s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.490s] -- Detecting CXX compile features
+[0.490s] -- Detecting CXX compile features - done
+[0.495s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.797s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.165s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[1.166s]   By not providing "Findlaunch_ros.cmake" in CMAKE_MODULE_PATH this project
+[1.166s]   has asked CMake to find a package configuration file provided by
+[1.166s]   "launch_ros", but CMake did not find one.
+[1.166s] 
+[1.166s]   Could not find a package configuration file provided by "launch_ros" with
+[1.166s]   any of the following names:
+[1.166s] 
+[1.166s]     launch_rosConfig.cmake
+[1.167s]     launch_ros-config.cmake
+[1.167s] 
+[1.167s]   Add the installation prefix of "launch_ros" to CMAKE_PREFIX_PATH or set
+[1.167s]   "launch_ros_DIR" to a directory containing one of the above files.  If
+[1.167s]   "launch_ros" provides a separate development package or SDK, be sure it has
+[1.167s]   been installed.
+[1.167s] 
+[1.167s] [0m
+[1.167s] -- Configuring incomplete, errors occurred!
+[1.171s] Invoked command in '/home/eva/Documents/ros2_ws/build/robot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eva/Documents/ros2_ws/install/talker:/home/eva/Documents/ros2_ws/install/my_turtle_controller:/home/eva/Documents/ros2_ws/install/my_service_server:/home/eva/Documents/ros2_ws/install/my_service_client:/home/eva/Documents/ros2_ws/install/my_robot_driver:/home/eva/Documents/ros2_ws/install/my_path_publisher:/home/eva/Documents/ros2_ws/install/my_fake_lidar:/home/eva/Documents/ros2_ws/install/listener:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/eva/Documents/ros2_ws/src/robot -DCMAKE_INSTALL_PREFIX=/home/eva/Documents/ros2_ws/install/robot
