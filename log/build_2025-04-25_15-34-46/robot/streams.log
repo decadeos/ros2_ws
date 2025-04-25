@@ -1,0 +1,22 @@
+[0.806s] Invoking command in '/home/eva/Documents/ros2_ws/src/robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eva/Documents/ros2_ws/build/robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot build --build-base /home/eva/Documents/ros2_ws/build/robot/build install --record /home/eva/Documents/ros2_ws/build/robot/install.log --single-version-externally-managed install_data
+[1.047s] running egg_info
+[1.065s] writing ../../build/robot/robot.egg-info/PKG-INFO
+[1.065s] writing dependency_links to ../../build/robot/robot.egg-info/dependency_links.txt
+[1.065s] writing entry points to ../../build/robot/robot.egg-info/entry_points.txt
+[1.065s] writing requirements to ../../build/robot/robot.egg-info/requires.txt
+[1.065s] writing top-level names to ../../build/robot/robot.egg-info/top_level.txt
+[1.102s] reading manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[1.102s] writing manifest file '../../build/robot/robot.egg-info/SOURCES.txt'
+[1.103s] running build
+[1.103s] running build_py
+[1.103s] running install
+[1.109s] running install_lib
+[1.128s] running install_data
+[1.128s] copying worlds/moving_world.sdf -> /home/eva/Documents/ros2_ws/install/robot/share/robot/worlds
+[1.128s] running install_egg_info
+[1.148s] removing '/home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot-0.0.0-py3.12.egg-info' (and everything under it)
+[1.149s] Copying ../../build/robot/robot.egg-info to /home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot-0.0.0-py3.12.egg-info
+[1.150s] running install_scripts
+[1.275s] Installing cmd_vel_publisher script to /home/eva/Documents/ros2_ws/install/robot/lib/robot
+[1.276s] writing list of installed files to '/home/eva/Documents/ros2_ws/build/robot/install.log'
+[1.331s] Invoked command in '/home/eva/Documents/ros2_ws/src/robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eva/Documents/ros2_ws/build/robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot build --build-base /home/eva/Documents/ros2_ws/build/robot/build install --record /home/eva/Documents/ros2_ws/build/robot/install.log --single-version-externally-managed install_data

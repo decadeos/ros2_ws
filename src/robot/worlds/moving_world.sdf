@@ -15,7 +15,7 @@
     -->
     <physics name="1ms" type="ignored">
       <max_step_size>0.001</max_step_size>
-      <real_time_factor>3.0</real_time_factor>
+      <real_time_factor>15.0</real_time_factor>
     </physics>
 
     <!--
@@ -27,6 +27,8 @@
     <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
     <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
     <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"/>
+
 
     <!--
       Настраиваем источник света "sun" (солнечный свет) с заданным направлением,
@@ -342,7 +344,7 @@
         Расположен на +0.04 над floor2.
       -->
       <link name="lidar_link">
-        <pose relative_to="floor2">0 0 0.04 0 0 0</pose>
+        <pose relative_to="floor2">0 0 0.03 0 0 0</pose>
         <inertial>
           <mass>0.2</mass>
           <inertia>
@@ -366,6 +368,40 @@
             <diffuse>0 0 0 1</diffuse>
           </material>
         </visual>
+		<sensor name="lidar_sensor" type="gpu_ray">
+		  <frame_id>lidar_link</frame_id>
+		  <pose>0 0 0 0 0 0</pose>
+		  <topic>/lidar</topic>
+		  <update_rate>1</update_rate>
+		  <ray>
+			<scan>
+			  <horizontal>
+				<samples>36</samples>
+				<resolution>1</resolution>
+				<min_angle>-1.5708</min_angle> <!-- -90° -->
+				<max_angle>1.5708</max_angle>  <!-- +90° -->
+			  </horizontal>
+			  <vertical>
+				<samples>1</samples>
+				<resolution>0.01</resolution>
+				<min_angle>0</min_angle>
+				<max_angle>0</max_angle>
+			  </vertical>
+			</scan>
+			<range>
+			  <min>0.08</min>
+			  <max>7.0</max>
+			  <resolution>0.01</resolution>
+			</range>
+			<noise>
+			  <type>gaussian</type>
+			  <mean>0.0</mean>
+			  <stddev>0.01</stddev>
+			</noise>
+		  </ray>
+		  <always_on>true</always_on>
+		  <visualize>true</visualize>
+		</sensor>
         <collision name="lidar_collision">
           <geometry>
             <cylinder>
@@ -375,6 +411,7 @@
           </geometry>
         </collision>
       </link>
+
       <joint name="lidar_joint" type="fixed">
         <parent>floor2</parent>
         <child>lidar_link</child>
@@ -612,7 +649,7 @@
       располагается на x=1.5 (чуть впереди робота).
     -->
     <model name="green_cube">
-      <pose>1.5 0 0.025 0 0 0</pose>
+      <pose>5.5 0 0.025 0 0 0</pose>
       <link name="cube_link">
         <inertial>
           <mass>0.2</mass>
@@ -628,7 +665,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.05 0.05 0.05</size>
+              <size>0.05 0.5 0.5</size>
             </box>
           </geometry>
           <material>

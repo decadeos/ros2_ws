@@ -9,13 +9,11 @@ def generate_launch_description():
     world_path = os.path.join(pkg_path, 'worlds', 'moving_world.sdf')
 
     return LaunchDescription([
-        # Запускаем весь мир (включая робота)
         ExecuteProcess(
             cmd=['gz', 'sim', world_path],
             output='screen'
         ),
 
-        # Мост между ROS и Gazebo для /cmd_vel
         ExecuteProcess(
             cmd=[
                 'ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',
@@ -24,7 +22,6 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Нода, публикующая Twist-команды
         Node(
             package='robot',
             executable='cmd_vel_publisher',
