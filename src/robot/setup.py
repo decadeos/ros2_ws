@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'cmd_vel_publisher = robot.cmd_vel_publisher:main',
+            'obstacle_avoider = robot.obstacle_avoider:main',
         ],
     },
 )

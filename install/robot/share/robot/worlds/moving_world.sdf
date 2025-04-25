@@ -13,7 +13,7 @@
         - max_step_size: максимальный шаг интеграции
         - real_time_factor: желаемая скорость реального времени (1.0 = реальное)
     -->
-    <physics name="1ms" type="ignored">
+    <physics name="1ms" type="ode">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>15.0</real_time_factor>
     </physics>

@@ -1,5 +1,7 @@
+/home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot/obstacle_avoider.py
 /home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot/__init__.py
 /home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot/cmd_vel_publisher.py
+/home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot/__pycache__/obstacle_avoider.cpython-312.pyc
 /home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot/__pycache__/__init__.cpython-312.pyc
 /home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot/__pycache__/cmd_vel_publisher.cpython-312.pyc
 /home/eva/Documents/ros2_ws/install/robot/share/ament_index/resource_index/packages/robot
@@ -14,3 +16,4 @@
 /home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot-0.0.0-py3.12.egg-info/zip-safe
 /home/eva/Documents/ros2_ws/install/robot/lib/python3.12/site-packages/robot-0.0.0-py3.12.egg-info/PKG-INFO
 /home/eva/Documents/ros2_ws/install/robot/lib/robot/cmd_vel_publisher
+/home/eva/Documents/ros2_ws/install/robot/lib/robot/obstacle_avoider
